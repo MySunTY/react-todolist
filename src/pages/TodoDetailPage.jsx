@@ -11,8 +11,11 @@ function TodoDetailPage() {
             Todo Detail<TodoStatus type="todo"  />
         </h2>
         <FormInput />
-        <Button label="Update" type="primary" size="lg" /><br />
-        <Button label="Delete" type="danger" size="lg" />
+        <div className="tododetail-buttons-wrapper">
+            <Button label="Update" type="primary" size="lg" /><br />
+            <Button label="Delete" type="danger" size="lg" />
+        </div>
+        
     </div>
   )
 }

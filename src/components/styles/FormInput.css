@@ -6,16 +6,41 @@
 
 .formInput-title-wrapper{
     margin :10px 0px;
+    width: 98%;
 }
 
 .formInput-title{
     border-radius : 5px;
+    width: 98%;
+    height: 30px;
+    font-size : 16px;
+    outline : none;
+    border: none;
+    border: 1px solid silver;
+}
+.formInput-title:focus{
+    border-color: black;
+    border-width: 2px;
 }
 
 .formInput-text-wrapper{
     margin-top : 10px;
+    width: 98%;
+   
 }
 
 .formInput-text{
     border-radius: 5px;
+    width: 98%;
+    height: 100px;
+    font-size : 16px;
+    outline: none;
+    border: none;
+    border: 1px solid silver;
+
+}
+
+.formInput-text:focus{
+    border-color: black;
+    border-width: 2px;
 }
