@@ -1,0 +1,12 @@
+.tabmenu-wrapper{
+    display:flex;
+    column-gap: 30px;
+}
+
+.tabmenu{
+    font-size : 30px;
+    font-weight : bold;
+    border-bottom : 2px solid gray;
+    color: gray;
+    cursor : pointer;
+}

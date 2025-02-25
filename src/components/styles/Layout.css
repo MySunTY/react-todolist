@@ -1,0 +1,21 @@
+// 420px 이하 모바일환경이라고 가정
+// 420px 초과 pc환경이라고 가정
+
+@media screen and (max-width:420px){
+    .layout-wrapper{
+        width : 100%;
+        height : 100dvh;
+    }
+}
+@media screen and (min-width:421px){
+    .layout-wrapper{
+        width : 420px;
+        margin-left: calc(50% - 210px);
+        height: 100dvh;
+    }
+}
+
+
+.layout-wrapper{
+    background-color : white;
+}

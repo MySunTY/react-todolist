@@ -1,0 +1,10 @@
+.todoItem-wrapper{
+    margin-top : 10px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.todoItem-title{
+    color: black;
+    padding : 5px;
+}
