@@ -4,6 +4,11 @@
 
 .todoItemList-wrapper{
     margin-bottom:20px;
+    height: 70dvh;
+    white-space: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
 }
 
 .tododetail-buttons-wrapper{

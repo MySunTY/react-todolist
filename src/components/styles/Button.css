@@ -17,6 +17,11 @@
 .todo-button.sm{
     width: 80px;
 }
+.todo-button.xs.normal{
+    width: 50px;
+    height: 20px;
+    background-color: gray;
+}
 
 
 
@@ -25,7 +30,7 @@
 }
 
 .todo-button.normal{
-    background-color:black;
+    background-color:rgb(45, 24, 24);
 }
 
 .todo-button.danger{

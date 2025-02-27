@@ -12,7 +12,7 @@ const router= createBrowserRouter([
   {path : "/", element: <Layout />, children:[
     {path: "/", element:<MainPage />},
     {path: "/add", element:<TodoAddPage />},
-    {path: "/detail", element:<TodoDetailPage />},
+    {path: "/detail/:id", element:<TodoDetailPage />},
 
   ]}
   // {path:"/", element: <h2>여기는 메인페이지</h2> },

@@ -16,7 +16,6 @@ function TodoAddPage() {
     
   }
   const onClickSubmit= ()=>{
-    console.log(todo);
     //localStorage에 저장 배열형태를 JSON.stringify를 이용해서 string으로 저장
     //기존데이터를 가져와서 배열로 번환, (JSON.parse())
     //기존데이터에 새로운 todo데이터를 추가
@@ -26,16 +25,19 @@ function TodoAddPage() {
     const parsedData = JSON.parse(savedData);
 
     //새로운 데이터를 제일앞에추가
-    parsedData.unshift(todo);
+    parsedData.unshift({...todo, id: new Date().getTime()});
 
     const saveTodoListData = JSON.stringify(parsedData);
     localStorage.setItem("todo-list",saveTodoListData);
     //localStorage에 저장후 메인페이지로 이동
     navigate("/");
   }
+  const onClickBack=()=>{
+    navigate("/");
+  }
   return (
     <div className="page-wrapper">
-        <Button label={"back"} size={"sm"} type={"normal"} />
+        <Button label={"back"} size={"sm"} type={"normal"} onClickButton={onClickBack} />
         <h2>Todo Add Page</h2>
         <FormInput onChangeTodoState={onChangeTodoState} />
         <div className="todoAdd-btn-wrapper">

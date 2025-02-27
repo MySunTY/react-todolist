@@ -1,13 +1,13 @@
 import { useState } from "react"
 import "./styles/FormInput.css"
 
-function FormInput({onChangeTodoState}) {
+function FormInput({onChangeTodoState , editData= {}}) {
     const [todoState, setTotoState] = useState({
-        title: "",
-        content : "",
+        title: editData.title || "",
+        content : editData.content || "",
     })
-    const [input, setInput] =useState("");
-    const [textarea, setTextarea] =useState("")
+    const [input, setInput] =useState(editData.title || "");
+    const [textarea, setTextarea] =useState(editData.content || "")
     const handleChangeInput =(e)=>{
         setInput(e.target.value)
         const resultTodoState = {... todoState, title: e.target.value}
